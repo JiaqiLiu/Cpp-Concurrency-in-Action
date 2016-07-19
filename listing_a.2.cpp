@@ -1,5 +1,10 @@
+#include <iostream>
+#include <memory>
+
 class move_only
 {
+	typedef int my_class; // Added by Jiaqi
+
     std::unique_ptr<my_class> data;
 public:
     move_only(const move_only&) = delete;
